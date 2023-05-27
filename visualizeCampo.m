@@ -16,7 +16,7 @@ function campo = visualizeCampo(Ny, Nz, ymin, ymax, zmin, zmax, I, R, N, x, y, z
     %correspondientes de las matrices ya iniciadas
     for i = 1:size(Y)
         for j = 1:size(Z)
-            B0 = getCampoMagneticoF(I,R,N,0,Y(i,j),Z(i,j));
+            B0 = getCampoMagnetico(I,R,N,0,Y(i,j),Z(i,j));
             Bz(i,j) = B0(3);
             By(i,j) = B0(2);
         end
